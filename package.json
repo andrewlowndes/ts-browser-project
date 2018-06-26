@@ -6,7 +6,7 @@
   "scripts": {
     "prepare-env": "node ./scripts/prepare-env",
     "start": "concurrently \"tsc -w -p ./config/tsconfig.json\" \"http-server build -p 8080 -o\"",
-    "build": "copyfiles -f \"node_modules/normalize.css/normalize.css\" dist && webpack --config ./config/webpack.config.js",
+    "build": "webpack --config ./config/webpack.config.js",
     "dist": "http-server dist -p 8081 -o",
     "test": "karma start config/karma.conf.js --browsers ChromeHeadless --single-run",
     "test-debug": "karma start config/karma.conf.js",
@@ -17,7 +17,6 @@
   "devDependencies": {
     "@types/jasmine": "^2.8.8",
     "concurrently": "^3.5.1",
-    "copyfiles": "^2.0.0",
     "http-server": "^0.11.1",
     "jasmine-core": "^3.1.0",
     "karma": "^2.0.2",

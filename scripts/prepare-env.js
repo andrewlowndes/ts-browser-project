@@ -16,3 +16,4 @@ createDirLink(build + 'src', '../src');
 createDirLink(build + 'config', '../config');
 createDirLink(build + 'assets', '../assets');
 createDirLink(dist + 'assets', '../assets');
+createDirLink(dist + 'node_modules', '../node_modules');

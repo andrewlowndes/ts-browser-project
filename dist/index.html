@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css" />
+    
+    <script>
+      (function() {
+        function addScript(src) {
+          var script = document.createElement('script');
+          script.src = src;
+          document.body.appendChild(script);
+        }
+        
+        window.onload = function() {
+          addScript('vendor.js');
+          addScript('app.js');
+        };
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
